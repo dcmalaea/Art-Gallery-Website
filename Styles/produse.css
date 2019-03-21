@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#main-bar{
+    background-color: #A0E8AF;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+#main-bar>#fc{
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0 0 0 ;
+}
+#main-bar>#fc>#favourites>img,#main-bar>#fc>#cart>img{
+    width: 25px;
+    height: 25px;
+}
+#main-bar>#search
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+#main-bar>#search>input
+{
+    border-radius: 20px;
+    padding: 0px 0px 0px 10px;
+    border: 2px solid #3AB795;
+    height: 25px;
+    width: 300px;
+}
+main 
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+input:focus{
+    outline: none;
+}
+#sort{
+    width: 100%;
+    height: 100px;
+    background-color: #A0E8AF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#sort>#select{
+    display: flex;
+    flex-direction: row;
+}
+.selector{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#wrapper{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+#wrapper>#price{
+    
+    background-color: #3AB795;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#wrapper>#produse{
+   
+    background-color: #86BAA1;
+}
+
+#wrapper>#price>.sideSelector{
+    background-color: #EDEAD0;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+#favItems{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #86BAA1;
+}
+
+#produse{
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.produs{
+    /*
+    opacity: 0;
+    transition: opacity 0.3s linear;
+    */
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #EDEAD0;
+    margin: 10px;
+    position: relative;
+    text-align: center;
+}
+.produs>img{
+    width: 100px;
+    height: 100px;
+
+}
+.popup{
+    background-color: white;
+    border-radius: 10px;
+    white-space: pre;
+    padding: 10px;
+    
+}
+
+.fadeIn{
+    opacity: 0;
+    animation: fadeIn 0.5s linear;
+}
+@keyframes fadeIn{
+    100%{
+        opacity: 1;
+    }
+}
+
+
+#complain_form{
+    width: 100%;
+    background-color: #A0E8AF;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#complain_form>textarea{
+    width: 400px;
+    height: 100px;
+    border: 2px solid #3AB795;
+    border-radius: 20px;
+    outline: none;
+    padding: 20px;
+}
+#complain_form>button{
+    width: 200px;
+    height: 30px;
+    margin: 5px;
+}
+
+#complainArea{
+    width: 100%;
+    position: relative;
+    background-color: #A0E8AF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    align-items: center;
+}
+
+.comment{
+    width: 60%;
+    background-color: #3AB795;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 10px;
+}
+main{
+    overflow: hidden;
+}
+
+
+
+@keyframes decrease{
+    100%{
+        width: 0px;
+        height: 0px;
+        opacity: 0;  
+    }
+}

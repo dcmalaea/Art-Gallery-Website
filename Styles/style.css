@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: block;
+}
+
+
+/*-------- BUY NOW SECTION ----------------*/
+#buy-div{
+    background-color: rgba(0,0,0,0.2);
+    background-image: url("../Images/buyBackground.png");
+    background-blend-mode: multiply;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - (80px + 113px)); 
+    position: relative;
+    overflow: auto;
+}
+#buy-section-bttn{
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 25px;
+    width: 300px;
+    height: 100px;
+    animation: fadeIn 0.3s linear;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(41, 41, 41);
+    font-size: 30px;
+    font-family: 'Lalezar', cursive;
+    box-shadow: rgba(0, 0, 0, 0.568) 5px 5px 15px;
+    background-color: rgb(255, 72, 0); 
+    }
+#buy-section-bttn:hover{
+    background-color: rgb(41, 41, 41);
+    color: rgb(255, 72, 0);
+}
+#buy-section-bttn:active{
+    background-color: rgb(41, 41, 41);
+    top: 45.5%;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/* -------END OF BUY NOW SECTION-----------*/ 
+
+
+
+/*-----------START OF SUBSCRIBE SECTION-------------*/
+
+#subscribe-div{
+    height: 113px;
+    background-color: #111;
+}
+#subscribe-div h2{
+    line-height: 113px;
+    vertical-align: middle;
+    float: left;
+    color: rgb(170, 62, 36);
+    margin: 0px 0px 0px 5%;
+}
+#subscribe-div form{
+    float: right;
+    margin: 38px 5% 0px 0px;
+}
+
+#subscribe-input{
+    float: left;
+    height: 35px;
+    width: 300px;
+    border: rgb(219, 76, 41) 2px solid;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 20px;
+}
+#subscribe-button{
+    text-decoration: none;
+    float:right;
+    background-color: rgb(219, 76, 41);
+    color: antiquewhite;
+    height: 35px;
+    width: 150px;
+    text-align: center;
+    line-height: 35px;
+    vertical-align: middle;
+}
+#subscribe-button:active{
+    background-color: rgb(177, 60, 31);
+}
+/*------------END OF SUBSCRIBE SECTION---------------/
+
+
+
+/* =========START OF ABOUT SECTION ======== */
+
+#about-section{
+    width: 100%;
+    background-image: url("../Images/paint4.jpg");
+    background-size: cover;
+    height: 530px;
+    overflow: hidden;
+}
+#about-section article{
+    height: 100%;
+    transform: scaleX(1.5) scaleY(1.5);
+    background-color: rgb(160, 59, 34);
+    border-radius: 50%;
+    width: 59%;
+    margin: auto;
+}
+#about-section>article>h2{
+    display: none;
+}
+#about-section>article p{
+    font-family: 'Lalezar', cursive;
+    color: rgb(39, 38, 38);
+    font-size: 0.7rem;
+    padding: 170px;
+    padding: 20%;
+    text-align: justify;
+}
+/* =========END OF ABOUT SECTION ======== */
+
+
+
+/*============ START OF REVIEWS SECTION===========*/
+
+#reviews-section{
+    background-color: #111;
+    width: 100%;
+    height: 530px;
+    padding: 15px;
+}
+#reviews-container{
+    margin: 0 auto;
+    width: 65%;
+    height: 500px;
+    padding: 15px 35px 0px 15px;
+    border-color: rgb(255, 72, 0);
+    border-width: 5px;
+    border-style: solid inset;
+    border-radius: 15px;
+    background: linear-gradient(30deg,rgb(252, 201, 201),rgb(193, 230, 247)); 
+
+}
+#reviews-section blockquote{
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(190, 190, 190, 0.596);
+    border-radius: 30px;
+    font-style: italic;
+}
+#reviews-section p{
+    margin: 20px 0px;
+    padding: 0px 100px;
+    float:right;
+}
+.review{
+     margin: 0 30px 70px 30px;
+     font-size: 1.1rem;
+     font-weight: 600;
+}
+/*============ END OF REVIEWS SECTION===========*/
+
+
+
+
+
+
+
+
+    @media screen and (max-width: 595px) {
+
+
+    /*=======SUBSCRIBE SECTION===========*/
+    
+        #subscribe-div{
+            height: 226px;
+        }
+        #subscribe-div h2{
+            font-size: 0.9rem;
+            margin: 0;
+            text-align: center;
+            float: none;
+        }
+        #subscribe-input{
+            float: none;
+            width: 200px; 
+            font-size: 0.7rem;
+            text-align: center;
+            margin : 0 auto;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 0px;
+        }
+        #subscribe-button{
+            float: none;
+            width: 200px; 
+            font-size: 0.8rem;
+            margin: 0 auto;
+        }
+        #subscribe-div form{
+            float: none;
+            margin: 0 auto;
+        }
+
+        /*==========ABOUT SECTION===========*/
+        
+        #about-section article{
+            transform: none;
+            border-radius: 0;
+            width: 100%;
+        }
+        #about-section>article p{
+            font-size: 0.8rem;
+            padding: 100px 10px 0 10px;
+            text-align: center;
+            display: block;
+        }
+        /*===========REVIEWS SECTION=======*/
+        
+        #reviews-container{
+            width: 90%;
+            padding: 20px 0 0 0;
+        }
+        #reviews-section blockquote{
+            padding: 30px;
+        }
+        #reviews-section p{
+            margin:  10px 0px;
+            padding: 0px 50px;
+        }
+        .review{
+             margin: 0 15px 50px 15px;
+             font-weight: 500;
+             font-size: 0.9rem;
+        }
+        
+     }
+     @media screen and (min-width:
+     596px) and (max-width: 995px) {
+
+
+        /*=======SUBSCRIBE SECTION===========*/
+        
+            #subscribe-div{
+                height: 226px;
+            }
+            #subscribe-div h2{
+                font-size: 0.9rem;
+                margin: 0;
+                text-align: center;
+                float: none;
+            }
+            #subscribe-input{
+                float: none;
+                width: 200px; 
+                font-size: 0.7rem;
+                text-align: center;
+                margin : 0 auto;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                border-bottom-left-radius: 0px;
+            }
+            #subscribe-button{
+                float: none;
+                width: 200px; 
+                font-size: 0.8rem;
+                margin: 0 auto;
+            }
+            #subscribe-div form{
+                float: none;
+                margin: 0 auto;
+            }
+    
+            /*==========ABOUT SECTION===========*/
+            
+            #about-section article{
+                border-radius: 0;
+            }
+            #about-section>article p{
+                font-size: 0.7rem;
+                padding: 150px 10px 50px 10px;
+                text-align: center;
+            }
+            /*===========REVIEWS SECTION=======*/
+            
+            #reviews-container{
+                width: 90%;
+                padding: 20px 0 0 0;
+            }
+            #reviews-section blockquote{
+                padding: 30px;
+            }
+            #reviews-section p{
+                margin:  10px 0px;
+                padding: 0px 50px;
+            }
+            .review{
+                 margin: 0 15px 50px 15px;
+                 font-weight: 500;
+                 font-size: 0.9rem;
+            }
+            
+         }
+        
+        

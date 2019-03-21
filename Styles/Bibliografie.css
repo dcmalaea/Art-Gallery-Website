@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    padding: 100px 60px 20px 20px;
+    display: block;
+    width: 100%;
+    height: 550px;
+    background-image:url("../Images/paint4.jpg");
+    background-size: cover;
+}
+article{
+    display: block;
+    margin: 0px;
+    font-family: 'Lalezar',cursive;
+    float: left;
+    width: 65%;
+    color: rgb(0, 0, 0);
+    background-color: rgba(250, 235, 215, 0.486);
+    padding: 20px;
+}
+aside{
+    font-family: 'Lalezar',cursive;
+    float: right;
+    width: 20%;
+    margin: 0px;
+}
+
+.backgr{
+    display: block;
+    background-color: rgb(68, 68, 68);
+    color: rgb(231, 229, 226);
+    padding: 20px;
+    border-radius: 10px;
+}
+section.backgr{
+    padding: 30px;
+}
+h2{
+    font-size: 2rem;
+}
+section{
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 595px) {
+    #container{
+        width: 100%;
+        padding: 0;
+        height: 490px;
+    }
+    section{
+        font-size: 1rem;
+    }
+    article,aside{
+        float: unset;
+        width: 100%;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+    aside.backgr{
+        border-radius: 0px;
+    }
+
+}
+@media screen and (min-width:
+     596px) and (max-width: 995px){
+
+    article{
+        width: 70%;
+        margin:0;
+        height: 100%;
+    }
+    aside{
+        width: 30%;
+        margin: 0;
+        height: 100%;
+    }
+    aside.backgr{
+        border-radius: 0;
+    }
+    #container{
+        padding: 100px 20px 20px 20px;
+        padding: 0;
+    }
+
+
+     }

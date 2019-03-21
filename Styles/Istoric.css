@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    counter-reset: headerCount;
+    width: 100%;
+}
+#Istoric{
+    width: 100%;
+}
+#IstWrp{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+article>section{
+    width: 25%;
+    text-align: center;
+    padding: 30px;
+}
+h2{
+    display: none;
+}
+
+#col1{
+    order: 1;
+}
+#col2{
+    order: 2;
+}
+#col3{
+    order: 3;
+}
+#col4{
+    order: 4;
+}
+
+article>section>h3:before{
+    counter-increment: headerCount;
+    content: counter(headerCount)". ";
+}
+article>section:nth-child(even){
+    background-color: #fcbf49;
+    animation: slideFromLeft 0.3s linear;
+}
+article>section:nth-child(odd){
+    background-color: #eae2b7;
+    animation: slideFromRight 0.3s linear;
+}
+article>section:nth-child(even):hover{
+    background-color: hsl(40, 97%, 50%);
+    transform: scale(1.1);
+}
+article>section:nth-child(odd):hover{
+    background-color: hsl(51, 55%, 70%);
+    transform: scale(1.1);
+}
+
+@keyframes slideFromRight{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes slideFromLeft{
+    0%{
+        transform: translateX(200%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 595px) {
+    article>section{
+        width: 100%;
+    }
+}
+@media screen and (min-width:
+     596px) and (max-width: 995px)
+     {
+        article>section{
+            width: 100%;
+        }
+     }
